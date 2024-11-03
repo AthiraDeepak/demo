@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Form</title>
+</head>
+<body>
+    <table align="center"cellpadding="15" width="40%">
+        <tr>
+            <td> <a href="./mycontact.html">Contact Us</a></td>
+            <td> <a href="./login.html">Login </a></td>
+            <td> <a href="./register.html">Create Account</a></td>
+            <td> <a href="./enquiry.html"> Enquiry </a></td>
+            
+        </tr>
+
+    </table>
+    <hr color="grey" size="10">
+    <form action="">
+    <table align="center"cellpadding="15">
+        <caption><h1> Create Account</h1>
+            <font color="red"> Marked fields are require</font>
+        </caption>
+<tr>
+    <th> First Name <font color="red">*</font></th>
+    <td> <input type="text" required></td>
+    <th> Last Name <font color="red">*</font></th>
+    <td><input type="text" required></td>
+</tr>
+
+<tr>
+    <th> Email Id <font color="red">*</font></th>
+    <td> <input type="email" required></td>
+    <th> Mobile No <font color="red">*</font></th>
+    <td><input type="number" required></td>
+</tr>
+
+<tr>
+<th> Gender <font color="red">*</font></th>
+<td>
+    <input type="radio" name="Gender"value="MALE" checked>Male
+    <input type="radio" name="Gender"value="FEMALE">Female
+
+</td>
+<th> DOB <font color="red">*</font></th>
+<td> <input type="datetime-local"></td>
+</tr>
+
+<tr>
+    <th> Hobbies </th>
+    <td colspan="3" >
+        <input type="checkbox" >Reading
+        <input type="checkbox">Writting
+        <input type="checkbox"checked>Playing
+        <input type="checkbox">Singing
+        <input type="checkbox">Music
+    </td>
+</tr>
+
+<tr>
+    <td colspan="4">
+        <fieldset>
+            <legend> Your Full Address <font color="red">*</font></legend>
+            <textarea  rows="8" cols="80"></textarea>
+        </fieldset>
+    </td>
+</tr>
+
+<tr>
+    <th> State </th>
+    <td> 
+        <select >
+           <option> Choose </option>
+            <option> Karnataka </option>
+            <option> Kerala </option>
+            <option> MP </option>
+        </select>
+    </td>
+    <th> City</th>
+    <td>
+        <select >
+            <option> Choose </option>
+            <option> Bangalore </option>
+            <option> Palakkad </option>
+            <option> Mumbai </option>
+        </select>
+    </td>
+</tr>
+
+<tr>
+    <td colspan="4">
+        <font color="red">*</font>
+        <input type="checkbox"checked>I Agree on Terms & Conditions 
+        <details>
+            <summary> Read More...................</summary>
+            <p> this is the terms and conditions data ....................
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          <br>Expedita ad esse neque ducimus, tempora adipisci pariatur  <br>quaerat animi quisquam error quis repudiandae fugiat odio dignissimos architecto blanditiis nulla, dolore ullam?
+        </details>
+
+    </td>
+</tr>
+
+<tr>
+    <th colspan="4"> 
+        <button type="submit">  Submit</button>
+        <button type="reset"> Reset</button>
+    </th>
+</tr>
+    </table>
+
+        
+    </form>
+    </body>
+</html>

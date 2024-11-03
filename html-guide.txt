@@ -1,0 +1,218 @@
+HTML - Hypertext markup language
+       The html has collections of pre-defined tags.
+       The html use to create basic structure webpage.
+       html tags use to collect input from user and use to display output to user via browser.
+       The html tags has limitaion on property / attribute and values.due to this limitation other
+       languages are required to complete project requirement.
+
+CSS -  Cascading Style Sheet.
+       it has collection of only property and values.
+       it use to charge look and feel of html
+
+      How html & css work ?
+        Responsible webpages = HTML(tags) + CSS(property & values)
+html Tag ?
+       <> open tags
+       </> close tag
+
+Types of tags in html ?
+        1. input tag - it was to collect input from user
+        2. output tag - it use to display output to user
+
+structure / syntax of html tags
+        1. dependent tag - those html tags, that has open and close seprate
+            example
+               <html> </html>
+               <abc> </abc>
+               <h1> </h1>
+    
+        2. independent Tag - that html tags has only open
+            example 
+               <br>
+               <hr>
+               <img>
+            Note - React JSX do not work with independent
+
+3. self closing - those html tags that open and close together
+     example
+      <br/>
+      <hr/>
+      <img/>
+    Note - it work with all js library and framework.
+
+The Behavior of html tags ?
+    1. block level tag - those html tags that print statement in new line by default
+    2. inline tag - those html tags, that print statement in same line(side by side) by default (eg:<label></label>)
+
+----------------------------------------------------------------------------------------------------    
+INPUT TAG - Collect input from user
+OUTPUT TAG - display output to user
+DEPENDENT TAG - It has open and close seprate
+INDEPENDENT TAG - It has open only
+SELF CLOSING TAG - it has open & close together
+BLOCK LEVEL TAG - it print new line
+INLINE TAG - it print in same line
+
+--------------------------------------------------------------------------
+what are valid extensions html document ?
+       .html - best for digital marketing
+       .htm
+
+------------------------------------------------------------------
+Different name of html tags in other language.
+       <h1>  =>html =>tag
+       <h1>  =>CSS  =>Selector
+       <h1>  =>js   =>element
+       <h1>  =>React =>JSX element
+---------------------------------------------------------------------
+structure of html document ?
+       html start to html end called document
+       =>head
+           ->Analytics / Digital marketing
+           ->library (css,js , other library too)
+       =>body
+            =>for input & output
+            ->Note - use suitable tags based on contents.
+-----------------------------------------------------------------------------------------
+Use of h1 to h6 ?
+   ->it called heading tag.
+   ->it use to create headline of webpage.
+   ->use h1 min and max 1 time in each page for better user experience and better visibilty on google search
+-----------------------------------------------------------------------------------------------------------------
+ p - use p tag to display text data in webpage. but keep a limit of min and max contents for better 
+     page performance.
+     min limit 1 line of text data.
+     max limit uo to 5 line of text data for better readability.
+ 
+ for small length   text data ( up to 130 chars)
+     label, b, i, u,font, strong, em...,small
+-------------------------------------------------------------------------------------------------------------------
+Type of list in html ?
+    1. OL - order list
+            ----------
+            type ="1"
+            type ="A"
+            type ="a"
+            type ="I"
+            type ="i"
+
+    2. UL - Unorder list
+            -------------
+            type ="disc"
+            type ="square"
+            type ="circle"
+            type ="none"
+
+    3. DL - definition list
+            ----------------
+            dt - definition list -- it use to display headline of contents
+            dd - definition details -- it use to display details about the contents
+--------------------------------------------------------------------------------------------------------------------    
+Table in Html ?
+Two methods:
+
+  1.Method
+       =>table
+          ->caption
+          ->tr(table row)
+               ->th(table heading)
+               ->td(table data)
+   2.Method   
+         =>table
+             ->thead - it cover upper part of table
+                ->tr
+                  ->th
+             ->tbody - it cover middle part of table
+                ->tr
+                   ->td
+             ->tfoot - it cover bottom part of table
+                  ->tr
+                     ->th
+    =>property in table , tr , td, thead, tbody, tfoot                 
+       1. align (left, center, right, justiry)
+       2. border -
+       3. cellspacing - it apply space outside th, td
+       4. cellpadding - it apply space inside th, td
+    =>table1.html 
+
+------------------------------------------------------------------------------
+
+ How to link the pages 
+        <a href="" target="" titile=""> Text To Link </a>
+
+       => "a" is a tag name
+       => href is property name that use to set path/url for next page
+       => target it is property that define where the next page should open , it is 6 type
+       => titile it is for digital marketing , it introduce to search engine that what is purpose of this link 
+        home.html
+        about.html
+
+      Type of target ?
+
+          1. _self -=> it open next page in the same tab. it is default target
+          2. _new  -=> it open next page in new tab but only 1st click.
+          3. _blank -=> it open next page in new tab but every click.
+
+        Using JS
+          4. _child
+          5. _parent
+
+        Using html frameset
+           6. user-defined - we can create own target
+
+==================================================================================== 
+  Input Elements / Tags
+    ->text     - 1 line input
+    ->number   - 1 line input
+    ->email    - 1 line input
+    ->password - 1 line input
+    ->textarea - multiple line input
+    ->Select   - choose option
+    ->checkbox - check 1 or multiple
+    ->radio    - choose any one
+    ->file     - upload any type of file
+    ->date     -choose date from date picker
+    ->color    - choose color from color cube
+    ->button   - for user action
+       ->submit
+       ->reset
+       ->button
+
+
+List of property for input Elements
+       name - it use to create a container that hold the value given by user.
+       placeholder - it is for input guidence
+       maxlength - it use to set limit as no. of char (text,email, password, textarea)
+       Size - it resize the width of text, email, password 
+       tabindex - it set the sequence of cursor.
+       readonly - it make readonly , user can not edit but value can pass to backend
+       disabled - it make readonly, user can not edit even value can not pass to backend
+       value -  it use to diplay default value in input Element
+       class - it use to link html with css and javascript
+       id - it also use to link html with css and javascript
+       enctype - it use to encode any files as attachment while uploading from user pc to server
+                 without encode the 7 layer of network do not allow to upload any file.
+                 
+ from
+      action - it use to set the url for backend where the form data should get submitted.
+      method - it set type of communication between client and server
+                get - it pass data from clint to server & server to client but data will be visible,
+                      and it is marked as unsecure communication.
+                post - it pass data from client to server & server to client but data will be fully 
+                       hidden and secure
+                put  - it send request to server for updating all values.
+                patch - it send request to server for updating only modified values
+                delete- it send request to server for deleting specific record
+---------------------------------------------------------------------------------       
+
+
+       
+
+
+
+
+
+
+
+        
+    
